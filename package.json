@@ -1,0 +1,27 @@
+{
+  "name": "express-tutorial",
+  "version": "1.0.0",
+  "description": "express tutorial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JorisCraessaerts/express-tutorial.git"
+  },
+  "keywords": [
+    "express",
+    "tutorial"
+  ],
+  "author": "Joris Craessaerts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JorisCraessaerts/express-tutorial/issues"
+  },
+  "homepage": "https://github.com/JorisCraessaerts/express-tutorial#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3"
+  }
+}
