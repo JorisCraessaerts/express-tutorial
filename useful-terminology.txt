@@ -1,0 +1,8 @@
+Express/EJS
+--------------------------
+templates
+partial views
+middleware
+express.static
+static files handling
+assets handling

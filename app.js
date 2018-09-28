@@ -2,6 +2,7 @@ var express = require('express');
 
 var app = express();
 app.set('view engine', 'ejs'); //Gaat automatisch bij conventie in de views folder kijken
+app.use('/assets', express.static('assets'));
 
 app.get('/', (req, res) => {
     res.send(__dirname + '/index.html');
@@ -14,12 +15,13 @@ app.get('/contact', (req, res) => {
 app.get('/profile/:name', (req, res) => {
     var data = {
         age: 22,
-        job: 'IT Consultant'
+        job: 'IT Consultant',
+        hobbies: ['Eating', 'Computering', 'Sleeping', 'Running']
     };
     res.render('profile', 
     {
         person: req.params.name,
-        data: data
+        data: data,
     });
 });
 
